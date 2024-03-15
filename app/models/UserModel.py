@@ -20,9 +20,7 @@ class UserModel(db.Model, UserMixin):
     def check_password(self, password):
         is_password_matching = False
         try :
-
             is_password_matching = pbkdf2_sha256.verify(password, self.password)
-
         except Exception as e :
             print(e)
         return(is_password_matching)

@@ -52,12 +52,4 @@ class UserView(MethodView):
             db.session.commit()
         except Exception as e:
             abort(500, message="An error occurred while updating the user.")
-        # for key, value in item_data.items():
-        #     setattr(item, key, value)
-        # db.session.commit()
         return match_user
-    
-# users_view = UsersView.as_view('users')
-# blp.add_url_rule('/users', view_func=login_required(users_view))
-# users_view_me = UserView.as_view('users_profile')
-# blp.add_url_rule('/users/me', view_func=login_required(users_view_me))

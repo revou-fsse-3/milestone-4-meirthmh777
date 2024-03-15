@@ -1,6 +1,6 @@
 from app.utils.db import db
 from sqlalchemy.orm import mapped_column
-from sqlalchemy import Integer, String, Text, DateTime, func, DECIMAL
+from sqlalchemy import Integer, String, DateTime, func, DECIMAL
 
 
 class TransactionModel(db.Model):

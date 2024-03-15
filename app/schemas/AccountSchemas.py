@@ -9,7 +9,6 @@ class AccountResponsSchemas(Schema):
     created_at = fields.DateTime()
     updated_at = fields.DateTime()
 
-
 class AccountCreateSchemas(Schema):
     user_id = fields.Int()
     account_type = fields.Str()
