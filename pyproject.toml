@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "app", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+flask = "^3.0.2"
+sqlalchemy = "^2.0.28"
+flask-sqlalchemy = "^3.1.1"
+python-dotenv = "^1.0.1"
+flask-smorest = "^0.44.0"
+marshmallow = "^3.21.1"
+mysql-connector-python = "^8.3.0"
+flask-login = "^0.6.3"
+bcrypt = "^4.1.2"
+flask-jwt-extended = "^4.6.0"
+flask-migrate = "^4.0.7"
+flask-bcrypt = "^1.0.1"
+passlib = "^1.7.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
